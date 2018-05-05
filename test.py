@@ -1,3 +1,3 @@
 #!/usr/bin/python
 
-print "My name is Anussi"
+print "My name is Anussi also called as kenda"
