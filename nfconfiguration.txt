@@ -1,0 +1,28 @@
+
+alias xil164='source /root/ecad/Vivado/2016.4/settings64.sh'
+xil164
+
+# REFERENCE SWITCH                                                                      
+alias   dp='cd /root/git/fresh/NetFPGA-SUME-live/lib/sw/std/driver/sume_riffa_v1_0_0'
+alias  bin='cd /root/git/fresh/NetFPGA-SUME-live/tools/scripts'
+alias ddir='cd /root/git/fresh/NetFPGA-SUME-live/projects/reference_nic'
+#alias apps='cd /root/git/NetFPGA-SUME-live/projects/reference_nic/sw/host/apps'
+alias apps='cd /root/git/fresh/live/projects/reference_nic/sw/host/apps'
+alias  lib='cd /root/git/fresh/NetFPGA-SUME-live/lib/hw/std/cores'
+alias tdir='cd /root/git/fresh/NetFPGA-SUME-live/projects/reference_nic/test'
+alias osnt='cd /root/git/OSNT-SUME-live/projects/osnt/sw/host/app/tools'
+
+export SUME_FOLDER=${HOME}/git/fresh/NetFPGA-SUME-live
+export XILINX_PATH=/root/ecad/Vivado/2016.4
+export NF_PROJECT_NAME=reference_nic
+export PROJECTS=${SUME_FOLDER}/projects
+export CONTRIB_PROJECTS=${SUME_FOLDER}/contrib-projects
+export IP_FOLDER=${SUME_FOLDER}/lib/hw/std/cores
+export CONSTRAINTS=${SUME_FOLDER}/lib/hw/std/constraints
+export XILINX_IP_FOLDER=${SUME_FOLDER}/lib/hw/xilinx/cores
+export NF_DESIGN_DIR=${SUME_FOLDER}/projects/${NF_PROJECT_NAME}
+export NF_WORK_DIR=/tmp/${USER}
+export PYTHONPATH=.:${SUME_FOLDER}/tools/scripts/:${NF_DESIGN_DIR}/lib/Python:${SUME_FOLDER}/tools/scripts/NFTest
+export DRIVER_NAME=sume_riffa_v1_0_0
+export DRIVER_FOLDER=${SUME_FOLDER}/lib/sw/std/driver/${DRIVER_NAME}
+export APPS_FOLDER=${SUME_FOLDER}/lib/sw/std/apps/${DRIVER_NAME}
